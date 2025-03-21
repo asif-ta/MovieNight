@@ -209,7 +209,7 @@ form{
         margin-bottom: 5rem;
     }
 }
-@media (min-width: 321px) and (max-width: 421px){
+@media (min-width: 321px) and (max-width: 420px){
 
     html{
         font-size: 11px;
