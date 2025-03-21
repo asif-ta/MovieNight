@@ -209,8 +209,11 @@ form{
         margin-bottom: 5rem;
     }
 }
+@media (min-width: 321px) and (max-width: 421px){
 
-@media (min-width: 321px) and (max-width: 576px) {
+    html{
+        font-size: 11px;
+    }
 
     header{
         height: 6.35rem;
@@ -234,6 +237,45 @@ form{
         justify-content: center;
         flex-direction: column;
         padding: 0 7.2580%;
+    }
+    .mainSection .container > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .mainSection .container .firstCard{
+        margin-top: 0rem;
+    }
+    .mainSection .container .thirdCard{
+        margin-bottom: 5rem;
+    }
+}
+@media (min-width: 421px) and (max-width: 576px) {
+
+    header{
+        height: 6.35rem;
+        padding: 0 2.875rem;
+    }
+    nav{
+        display: none;
+    }
+    form{
+        display: none;
+    }
+    .hamburgerLogo{
+        display: block;
+    }
+    .mainSection{
+        height: 100%;
+    }
+    .mainSection .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* padding: 0 7.2580%; */
+        /* align-items: center; */
     }
     .mainSection .container > div{
         display: flex;
