@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 400;
+}
+h2{
+    font-size: 2.1875rem;
+    color: #000;
+    font-weight: 700;
+}
+h3{
+    font-size: 2.125rem;
+    color: #000;
+    font-weight: 700;
+}
+h4{
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 700;
+}
+header{
+    width: 100%;
+    /* background-color: brown; */
+    height: 10.8125rem;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1440px;
+    /* background-color: blue; */
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 0 7.2580%; */
+}
+.container .logo{
+    font-weight: 700;
+    color: #AE2012;
+}
+nav{
+    max-width: 33.3125rem;
+    flex-grow: 1;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.selectedPage{
+    color: rgba(0, 0, 0, 1);
+}
+form{
+    position: relative;
+}
+.hamburgerLogo{
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+.hamburgerLogo img{
+    width: 100%;
+}
+.search{
+    width: 19.9275rem;
+    height: 3.125rem;
+    border-radius: 1.5625rem;
+    padding-left: 42px;
+}
+.searchLogo{
+    width: 24px;
+    height: 24px;
+    background: url(../img/search.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+}
+.mainSection{
+    width: 100%;
+    height: 56.625rem;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+}
+.mainSection .container{
+    max-width: 1440px;
+    /* background-color: rgb(21, 226, 192); */
+    height: 56.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 0 7.2580%; */
+}
+.mainSection .container > div{
+    width: 26.875rem;
+    height: 49.3125rem;
+    /* background: rgb(19, 201, 214); */
+    background: linear-gradient(#4CC9F0, #4361EE);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainSection .container .secondCard{
+    background: linear-gradient(#CCFF33, #70E000);
+}
+.mainSection .container .thirdCard{
+    background: linear-gradient(#FFEA00, #FFD000);
+}
+.mainSection .container div img{
+    padding: 3.4375rem 0 5.3125rem;
+    width: 100%;
+} 
+.mainSection .container div h3{
+    text-align: center;
+    width: 18.375rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 4.1875rem;
+}
+.mainSection .container div h4{
+    text-align: center;
+    width: 18.375rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 4.1875rem;
+}
+.mainSection .container div h4{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.mainSection .container div h4 span{
+    font-weight: 400;
+}
+.price{
+    display: inline-block;
+    line-height: 3.9375rem;
+    margin-top: 1rem;
+}
+.butButton{
+    display: inline-block;
+    width: 11.75rem;
+    height: 3.9375rem;
+    text-align: center;
+    line-height: 3.9375rem;
+    margin: 1rem 0 0 0.925rem;
+    border-radius: 1.96875rem;
+    background: rgba(76, 199, 240, 0.23);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.secondCard .butButton{
+    background: #CAFF32;
+}
+.thirdCard .butButton{
+    background: #FFE901;
+}
+@media (max-width: 320px) {
+    html{
+        font-size: 10px;
+    }
+
+    header{
+        height: 6.35rem;
+        padding: 0 2.875rem;
+    }
+    nav{
+        display: none;
+    }
+    form{
+        display: none;
+    }
+    .hamburgerLogo{
+        display: block;
+    }
+    .mainSection{
+        height: 100%;
+    }
+    .mainSection .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 7.2580%;
+    }
+    .mainSection .container > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .mainSection .container .firstCard{
+        margin-top: 0rem;
+    }
+    .mainSection .container .thirdCard{
+        margin-bottom: 5rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 576px) {
+
+    header{
+        height: 6.35rem;
+        padding: 0 2.875rem;
+    }
+    nav{
+        display: none;
+    }
+    form{
+        display: none;
+    }
+    .hamburgerLogo{
+        display: block;
+    }
+    .mainSection{
+        height: 100%;
+    }
+    .mainSection .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 7.2580%;
+    }
+    .mainSection .container > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .mainSection .container .firstCard{
+        margin-top: 0rem;
+    }
+    .mainSection .container .thirdCard{
+        margin-bottom: 5rem;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px){
+
+    header{
+        height: 6.35rem;
+        padding: 0 2.875rem;
+    }
+    nav{
+        display: none;
+    }
+    form{
+        display: none;
+    }
+    .hamburgerLogo{
+        display: block;
+    }
+    .mainSection{
+        height: 100%;
+    }
+    .mainSection .container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 7.2580%;
+    }
+    .mainSection .container > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    .mainSection .container .firstCard{
+        margin-top: 3rem;
+    }
+    .mainSection .container .thirdCard{
+        margin-bottom: 5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    header{
+        height: 6.35rem;
+        padding: 0 2.875rem;
+    }
+    nav{
+        display: block;
+        max-width: 25.3125rem;
+    }
+    form{
+        display: none;
+    }
+    .hamburgerLogo{
+        display: block;
+    }
+    .mainSection{
+        height: 100%;
+    }
+    .mainSection .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* padding: 0 7.2580%; */
+    }
+    .mainSection .container > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    /* .mainSection .container .firstCard{
+        margin-top: 3rem;
+    } */
+    .mainSection .container .thirdCard{
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px){
+    header{
+        height: 6.35rem;
+        padding: 0 2.875rem;
+    }
+    nav{
+        display: block;
+        max-width: 25.3125rem;
+    }
+    form{
+        display: block;
+    }
+    .hamburgerLogo{
+        display: none;
+    }
+    .mainSection{
+        height: 100%;
+    }
+    .mainSection .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* padding: 0 7.2580%; */
+    }
+    .mainSection .container > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    /* .mainSection .container .firstCard{
+        margin-top: 3rem;
+    } */
+    .mainSection .container .thirdCard{
+        margin-bottom: 3rem;
+    }
+}
